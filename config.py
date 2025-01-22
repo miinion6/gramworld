@@ -41,7 +41,7 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001873100556"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start Message 
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first} . I store private files for @iBOXTV</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first} . I store private Series/Movie Files </b>")
 try:
     ADMINS=[762308466]
     for x in (os.environ.get("ADMINS", "6124171612").split()):
@@ -50,10 +50,10 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first} . <b> You need to be a member of iBOXTV to use me Kindly join iBOXTV First with the Button Below 👇. </b></b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first} . <b> You need to be a member of below Channels to use me Kindly join using the buttons Below 👇 First. </b></b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @iBOX_TV</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
